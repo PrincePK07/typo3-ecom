@@ -145,6 +145,9 @@ page {
 
     includeCSS {
         demo_project_layout = EXT:demo_project/Resources/Public/Css/layout.min.css
+        demo_project_style = EXT:demo_project/Resources/Public/Css/style.css
+        demo_project_tiny_slider = EXT:demo_project/Resources/Public/Css/tiny-slider.css
+        demo_project_tiny_slider = EXT:demo_project/Resources/Public/Css/bootstrap.min.css    
     }
 
     includeJSLibs {
@@ -161,6 +164,10 @@ page {
 
     includeJSFooter {
         demo_project_scripts = EXT:demo_project/Resources/Public/JavaScript/Dist/scripts.js
+        demo_project_bootstrap= EXT:demo_project/Resources/Public/JavaScript/js/bootstrap.bundle.min.js
+        demo_project_custom = EXT:demo_project/Resources/Public/JavaScript/js/custom.js
+        demo_project_script_tiny_slider = EXT:demo_project/Resources/Public/JavaScript/js/tiny-slider.js
+
     }
 }
 
