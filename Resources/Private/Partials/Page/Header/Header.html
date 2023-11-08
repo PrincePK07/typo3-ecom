@@ -1,0 +1,35 @@
+<f:section name="Main">
+<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Furni<span>.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsFurni">
+            <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                <f:for each="{mainnavigation}" as="mainnavigationItem">
+                    <li class="{f:if(condition: mainnavigationItem.active, then:'active')} nav-item ">
+                        <a class="nav-link" href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
+                            {mainnavigationItem.title}
+                        </a>
+                        <f:if condition="{mainnavigationItem.children}">
+                            <ul>
+                                <f:for each="{mainnavigationItem.children}" as="child">
+                                    <li class="{f:if(condition: child.active, then:'active')}">
+                                        <a href="{child.link}" target="{child.target}" title="{child.title}">
+                                            {child.title}
+                                        </a>
+                                    </li>
+                                </f:for>
+                            </ul>
+                        </f:if>
+                    </li>     
+                </f:for>
+            </ul>
+ 
+        </div>
+    </div>
+        
+</nav>
+</f:section>
+

@@ -9,3 +9,4 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['demo_project'] = 'EXT:demo_projec
  * PageTS
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:demo_project/Configuration/TsConfig/Page/All.tsconfig">');
+

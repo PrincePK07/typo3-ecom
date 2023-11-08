@@ -1,0 +1,20 @@
+mod.wizards.newContentElement.wizardItems {
+    contentElements {
+        header = Content Elements
+    }
+}
+mod.wizards.newContentElement.wizardItems.contentElements.after = common
+
+mod.wizards.newContentElement.wizardItems.contentElements {
+    elements {
+        Banner {           
+            title = LLL:EXT:vindonissa_theme/Resources/Private/Language/ContentElements.xlf:banner.title 
+            description = LLL:EXT:vindonissa_theme/Resources/Private/Language/ContentElements.xlf:banner.description 
+            iconIdentifier = install-test-image
+            tt_content_defValues {
+                CType = Banner
+            }
+        }
+    }
+    show := addToList(Banner)
+}
