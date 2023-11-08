@@ -1,6 +1,6 @@
 lib.contentElement {
    templateRootPaths {
-      200 = EXT:vindonissa_theme/Resources/Private/Templates/
+      200 = EXT:demo_project/Resources/Private/Templates/
    }
 }
 
@@ -8,18 +8,7 @@ tt_content {
     Banner =< lib.contentElement
     Banner {
         templateName = Banner
-        dataProcessing {
-            10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
-            10 {
-                table = tx_vindonissa_theme_bannerlinks
-                pidInList.field = pid
-                where {
-                    data = field:uid
-                    intval = 1 
-                    wrap = bannervalues=|
-                } 
-                 orderBy = sorting
-            }
+       dataProcessing {
             20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
             20 {
                 references.fieldName = bannerimage
@@ -28,4 +17,5 @@ tt_content {
         }
     }
 }
+
 

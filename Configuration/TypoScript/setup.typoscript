@@ -8,7 +8,7 @@
 #### HELPER ####
 ################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:demo_project/Configuration/TypoScript/Helper/DynamicContent.typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:vindonissa_theme/Configuration/ContentElements/" extensions="setupts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:demo_project/Configuration/ContentElements/" extensions="setupts">
 
 
 ##############
